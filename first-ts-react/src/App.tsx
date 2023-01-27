@@ -24,9 +24,7 @@ const App:React.FC = () => {
     <div  className='App' >
      <span className="heading">Aika Tasks</span>
      <InputFeild todo={todo} setTodo={setTodo} addTodo={addTodo}/>
-    
-     <TodoList  todos={todos}
-          setTodos={setTodos}/>
+     <TodoList  todos={todos} setTodos={setTodos}/>
     </div>
   );
 }

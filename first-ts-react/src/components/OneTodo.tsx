@@ -50,9 +50,9 @@ const OneTodo: React.FC<{
       ref={inputRef}
     />
   ) : todo.isDone ? (
-    <s className="todos__one--text">{todo.todo}</s>
+    <s className="todos__one">{todo.todo}</s>
   ) : (
-    <span className="todos__one--text">{todo.todo}</span>
+    <span className="todos__one">{todo.todo}</span>
   )}
   <div>
     <span
@@ -60,10 +60,8 @@ const OneTodo: React.FC<{
       onClick={() => {
         if (!edit && !todo.isDone) {
           setEdit(!edit);
-        }
-      }}
-    >
-      <AiFillEdit />
+        }}}
+    ><AiFillEdit />
     </span>
     <span className="icon" onClick={() => handleDelete(todo.id)}>
       <AiFillDelete />
